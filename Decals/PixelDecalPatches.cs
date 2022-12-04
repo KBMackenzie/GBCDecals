@@ -55,7 +55,7 @@ internal static class PixelDecalPatches
 
         HideStats(in cardElements);
 
-        // If card already has the Decal object, then no need to add it again.
+        // If card already has a PixelDecal, then no need to add it again.
         if (cardElements.Find("PixelDecal") != null) return;
 
         // Add decal.
