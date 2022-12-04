@@ -43,9 +43,6 @@ internal static class PixelDecalPatches
 
     private static void AddDecalToCard(in PixelCardDisplayer instance)
     {
-        if (instance.gameObject.name == "CardPreviewPanel"
-            || !PixelDecals.ContainsKey(instance.info.name)) return;
-
         Transform? cardElements = instance
             .gameObject
             .transform
