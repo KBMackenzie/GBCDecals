@@ -29,10 +29,10 @@ public class Plugin : BaseUnityPlugin
 
     private static void AddDebugDecals()
     {
-        Sprite x = TextureHandler.SpriteFromBytes(Properties.Resources.decal_debug);
-        CardLoader.GetCardByName("Skeleton").AddPixelDecal(x);
-        CardLoader.GetCardByName("Zombie")?.AddPixelDecal(x);
-        CardLoader.GetCardByName("Gravedigger").AddPixelDecal(x);
-        CardLoader.GetCardByName("Draugr")?.AddPixelDecal(x);
+        Sprite sprite = TextureHandler.SpriteFromBytes(Properties.Resources.decal_debug);
+        CardLoader.GetCardByName("Skeleton").AddPixelDecal(sprite);
+        CardLoader.GetCardByName("Zombie")?.AddPixelDecal(sprite);
+        CardLoader.GetCardByName("Gravedigger").AddPixelDecal(sprite);
+        CardLoader.GetCardByName("Draugr")?.AddPixelDecal(sprite);
     }
 }
